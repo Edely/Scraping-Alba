@@ -1,4 +1,6 @@
-{
+# -*- coding: utf-8 -*-
+
+deputados = {
 "903708": "Dep. Aderbal Caldas",
 "910629": "Dep. Adolfo Menezes",
 "915860": "Dep. Adolfo Viana",

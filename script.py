@@ -4,7 +4,7 @@
 from bs4 import BeautifulSoup
 import sys, argparse, logging, os, random, urllib, urllib2, common
 import mechanize, urlparse, json, cookielib, re
-
+from lista_deputados import deputados
 #CONSTANTS
 url_inicial = 'http://www.al.ba.gov.br/transparencia/prestacao-de-contas'
 
@@ -27,16 +27,46 @@ url_inicial = 'http://www.al.ba.gov.br/transparencia/prestacao-de-contas'
 br = mechanize.Browser()
 pagina = br.open(url_inicial).read()
 
+for form in br.forms():
+    if form.attrs.get('action') == 'prestacao-de-contas':
+        br.form = form
+        
+def menu_deputados():
+    for k,v in deputados:
+        print k + ' - ' + v
 
-
-def abre_pagina(deputado):
+def abre_pagina(args):
     br = mechanize.Browser()
     pagina = br.open(url_inicial).read()
     
-    if deputado == 'todos':
+    for form in br.forms():
+        if form.attrs.get('action') == 'prestacao-de-contas':
+            br.form = form
+            
+    #prestacao-de-contas
+    
+    #caminho para deputado
+    
+    #caminho para mes
+    
+    #caminho para ano
+    
+    '''
+    pegar o deputado, ano e mes
+    se uma dessas opçoes nao for definida, entao cai no default
+    sendo :
+        deputado == todos
+        ano == todos
+        mes == todos
+    '''
+    
+    
+    if args.deputado == 'todos':
         #pesquisa todos:
+        print 'legal'
     else:
         #pesquisa so o deputado
+        print 'legal'
     
 
 def main(args):
@@ -51,4 +81,27 @@ def main(args):
         sys.exit(0)
         
 if __name__ == '__main__':
-    pass     
+    parser = argparse.ArgumentParser(description='Parametros da raspagem da prestacao de contas do site da ALBA')   
+    parser.add_argument('--deputado', help="O codigo do deputado a ser pesquisado.", default='todos')
+    parser.add_argument('--ano', help="O mes a ser pesquisado.", default='todos')
+    parser.add_argument('--mes', help="O ano a ser pesquisado.", default='todos')
+    parser.add_argument('--lista', help="A lista de deputados e seus respectivos codigos", action="menu_deputados")
+    args = parser.parse_args()
+    
+print(args)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
