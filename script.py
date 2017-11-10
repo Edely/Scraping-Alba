@@ -43,7 +43,6 @@ def abre_pagina(args):
         if form.attrs.get('action') == 'prestacao-de-contas':
             br.form = form
             
-    #prestacao-de-contas
     
     #caminho para deputado
     
@@ -60,14 +59,16 @@ def abre_pagina(args):
         mes == todos
     '''
     
+    parametros_pesquisa = {'deputado': 'todos', 'ano': 'todos', 'mes': 'todos'}
     
-    if args.deputado == 'todos':
-        #pesquisa todos:
-        print 'legal'
-    else:
-        #pesquisa so o deputado
-        print 'legal'
-    
+    if args.deputado != 'todos':
+        parametros_pesquisa['deputado'] = deputado
+        
+    if args.ano != 'todos':
+        parametros_pesquisa['ano'] = ano
+        
+    if args.mes != 'todos':
+        parametros_pesquisa['mes'] = mes
 
 def main(args):
     br, cj = common.initialize_browser()
@@ -88,8 +89,7 @@ if __name__ == '__main__':
     parser.add_argument('--lista', help="A lista de deputados e seus respectivos codigos", action="menu_deputados")
     args = parser.parse_args()
     
-print(args)
-
+    abre_pagina(args)
 
 
 
