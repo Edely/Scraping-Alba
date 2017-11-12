@@ -32,26 +32,35 @@ for form in br.forms():
         br.form = form
         
 def abre_pagina(args):
+    
+    #print args
+    
     br = mechanize.Browser()
     pagina = br.open(url_inicial).read()
     
     for form in br.forms():
         if form.attrs.get('action') == 'prestacao-de-contas':
             br.form = form
-        
+    
+    #print form['deputado']
     parametros_pesquisa = {'deputado': 'todos', 'ano': 'todos', 'mes': 'todos'}
     
     if args.deputado != 'todos':
-        parametros_pesquisa['deputado'] = deputado
+        parametros_pesquisa['deputado'] = args.deputado
         
     if args.ano != 'todos':
-        parametros_pesquisa['ano'] = ano
+        parametros_pesquisa['ano'] = args.ano
         
     if args.mes != 'todos':
-        parametros_pesquisa['mes'] = mes
+        parametros_pesquisa['mes'] = args.mes
         
+    form['deputado'] = [str(args.deputado)]
         
+    enviar = br.submit()
     
+    print br.response().read()
+    
+    #print parametros_pesquisa
 
 def main(args):
     br, cj = common.initialize_browser()
@@ -69,14 +78,12 @@ if __name__ == '__main__':
     parser.add_argument('--deputado', help="O codigo do deputado a ser pesquisado.", default='todos')
     parser.add_argument('--ano', help="O mes a ser pesquisado.", default='todos')
     parser.add_argument('--mes', help="O ano a ser pesquisado.", default='todos')
-    parser.add_argument('--lista', help="A lista de deputados e seus respectivos codigos", default='nomes')
+    parser.add_argument('--lista', help="A lista de deputados e seus respectivos codigos", default='esconder')
     args = parser.parse_args()
     
-    if args.lista:
+    if args.lista == 'mostrar':
         for k,v in deputados.items():
             print k + ' - ' + v
-    else:
-        print 'b'
-        
+                        
+    
     abre_pagina(args)
-
