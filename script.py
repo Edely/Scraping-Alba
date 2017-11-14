@@ -27,7 +27,11 @@ url_inicial = 'http://www.al.ba.gov.br/transparencia/prestacao-de-contas'
 print('a')
 
 br = mechanize.Browser()
-pagina = br.open(url_inicial, timeout=60).read()
+try:
+    pagina = br.open(url_inicial, timeout=60).read()
+except(urllib2.URLError):
+    print(urllib2.URLError)
+    sys.exit(0)
 
 for form in br.forms():
     if form.attrs.get('action') == 'prestacao-de-contas':
@@ -38,7 +42,11 @@ def abre_pagina(args):
     #print(args)
     
     br = mechanize.Browser()
-    pagina = br.open(url_inicial, timeout=60).read()
+    try:
+        pagina = br.open(url_inicial, timeout=60).read()
+    except(urllib2.URLError):
+        print(urllib2.URLError)
+        sys.exit(0)
     
     for form in br.forms():
         if form.attrs.get('action') == 'prestacao-de-contas':
@@ -46,29 +54,26 @@ def abre_pagina(args):
     
     print(form)
     
-    parametros_pesquisa = {'deputado': 'todos', 'ano': 'todos', 'mes': 'todos'}
+    #parametros_pesquisa = {'deputado': 'todos', 'ano': 'todos', 'mes': 'todos'}
     
     if args.deputado != 'todos':
-        #parametros_pesquisa['deputado'] = args.deputado
         form['deputado'] = [str(args.deputado)]
         
     if args.ano != 'todos':
-        #parametros_pesquisa['ano'] = args.ano
         form['ano'] = [str(args.ano)]
     
     if args.mes != 'todos':
         form['mes'] = [str(args.mes)]
-        #parametros_pesquisa['mes'] = args.mes
         
     
     print('aqui')
     enviar = br.submit()
     
     print('aca')
-    print(br.response().read())
     
-    #print(parametros_pesquisa)
-
+    pagina_resposta = br.response().read()
+    print(pagina_resposta)
+    
 def main(args):
     br, cj = common.initialize_browser()
     try:
