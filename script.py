@@ -24,43 +24,50 @@ url_inicial = 'http://www.al.ba.gov.br/transparencia/prestacao-de-contas'
 > salvar em arquivo csv/sql
 '''
 
+print('a')
+
 br = mechanize.Browser()
-pagina = br.open(url_inicial).read()
+pagina = br.open(url_inicial, timeout=60).read()
 
 for form in br.forms():
     if form.attrs.get('action') == 'prestacao-de-contas':
         br.form = form
         
 def abre_pagina(args):
-    
-    #print args
+    print('b')
+    #print(args)
     
     br = mechanize.Browser()
-    pagina = br.open(url_inicial).read()
+    pagina = br.open(url_inicial, timeout=60).read()
     
     for form in br.forms():
         if form.attrs.get('action') == 'prestacao-de-contas':
             br.form = form
     
-    #print form['deputado']
+    print(form)
+    
     parametros_pesquisa = {'deputado': 'todos', 'ano': 'todos', 'mes': 'todos'}
     
     if args.deputado != 'todos':
-        parametros_pesquisa['deputado'] = args.deputado
+        #parametros_pesquisa['deputado'] = args.deputado
+        form['deputado'] = [str(args.deputado)]
         
     if args.ano != 'todos':
-        parametros_pesquisa['ano'] = args.ano
-        
+        #parametros_pesquisa['ano'] = args.ano
+        form['ano'] = [str(args.ano)]
+    
     if args.mes != 'todos':
-        parametros_pesquisa['mes'] = args.mes
+        form['mes'] = [str(args.mes)]
+        #parametros_pesquisa['mes'] = args.mes
         
-    form['deputado'] = [str(args.deputado)]
-        
+    
+    print('aqui')
     enviar = br.submit()
     
-    print br.response().read()
+    print('aca')
+    print(br.response().read())
     
-    #print parametros_pesquisa
+    #print(parametros_pesquisa)
 
 def main(args):
     br, cj = common.initialize_browser()
@@ -83,7 +90,7 @@ if __name__ == '__main__':
     
     if args.lista == 'mostrar':
         for k,v in deputados.items():
-            print k + ' - ' + v
+            print( k + ' - ' + v)
                         
     
     abre_pagina(args)
