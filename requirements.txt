@@ -2,3 +2,4 @@ bs4
 mechanize
 selenium
 common
+html5lib

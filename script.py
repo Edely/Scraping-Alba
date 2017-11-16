@@ -8,7 +8,6 @@ from lista_deputados import deputados
 #CONSTANTS
 url_inicial = 'http://www.al.ba.gov.br/transparencia/prestacao-de-contas'
 
-
 '''
 > escolher deputado ou raspar todo o conteudo
 
@@ -32,10 +31,13 @@ try:
 except(urllib2.URLError):
     print(urllib2.URLError)
     sys.exit(0)
+    print('d')
 
 for form in br.forms():
     if form.attrs.get('action') == 'prestacao-de-contas':
         br.form = form
+        
+    #print(form)
         
 def abre_pagina(args):
     print('b')
@@ -43,6 +45,7 @@ def abre_pagina(args):
     
     br = mechanize.Browser()
     try:
+        print('c')
         pagina = br.open(url_inicial, timeout=60).read()
     except(urllib2.URLError):
         print(urllib2.URLError)
@@ -52,27 +55,41 @@ def abre_pagina(args):
         if form.attrs.get('action') == 'prestacao-de-contas':
             br.form = form
     
-    print(form)
+    print('e')
     
     #parametros_pesquisa = {'deputado': 'todos', 'ano': 'todos', 'mes': 'todos'}
     
     if args.deputado != 'todos':
-        form['deputado'] = [str(args.deputado)]
+        #form['deputado'] = [str(args.deputado)]
+        deputy = str(args.deputado)
         
     if args.ano != 'todos':
-        form['ano'] = [str(args.ano)]
+        #form['ano'] = [str(args.ano)]
+        year = str(args.ano)
     
     if args.mes != 'todos':
-        form['mes'] = [str(args.mes)]
+        #form['mes'] = [str(args.mes)]
+        month = str(args.mes)
         
+    #enviar = br.submit()
+    print('f')
     
-    print('aqui')
-    enviar = br.submit()
+    #aqui entrar o loop para acessar os dados especificamente
     
-    print('aca')
+    #deputado        
+#    def itera_forms():        
+#        while(indice_deputados < len(deputados.items())):
+#            print(indice_deputado)
+        
+    #ano
+    #mes
+    
+    acessa_form(deputy, year, month, form, br)
+        
+    print('g')
     
     pagina_resposta = br.response().read()
-    print(pagina_resposta)
+    print('h')
     
 def main(args):
     br, cj = common.initialize_browser()
@@ -97,5 +114,56 @@ if __name__ == '__main__':
         for k,v in deputados.items():
             print( k + ' - ' + v)
                         
+                
+def acessa_form(deputy, year, month, form, br):
+    form['deputado'] = [str(deputy)]
+    form['mes'] = [str(month)]
+    form['ano'] = [str(year)]
+
+    enviar = br.submit()
+    print('legal')
+    soup_dados = BeautifulSoup(br.response().read(), "html5lib")    
     
-    abre_pagina(args)
+    dados = soup_dados.find_all('div', 'linha-prop')
+    i = 0
+    for item in dados:
+        if i != 0:
+            print('item')
+        i+=1
+              
+    
+abre_pagina(args)
+
+
+#
+#
+#<div class="linha-prop">
+#  <div class="col-prop1">
+#      <strong>Mês / Ano</strong>
+#       01 / 2015
+#  </div>
+#  <div class="col-prop2">
+#      <strong>Categoria</strong>
+#      Aquisição ou locação de software; serviços postais  e de segurança; assinaturas de publicações; TV a cabo ou similar; acesso à Internet; e locação de móveis e equipamentos. Telefones.
+#  </div>
+#  <div class="col-prop3">
+#     <strong>Valor (R$)</strong>
+#     R$ 486.08
+#  </div>
+#  <div class="clearFloat"></div>
+#</div>
+#<div class="linha-prop">
+#  <div class="col-prop1">
+#      <strong>Mês / Ano</strong>
+#       01 / 2015
+#  </div>
+#  <div class="col-prop2">
+#      <strong>Categoria</strong>
+#      Consultorias, assessorias, pesquisas  e trabalhos técnicos
+#  </div>
+#  <div class="col-prop3">
+#     <strong>Valor (R$)</strong>
+#     R$ 32500
+#  </div>
+#  <div class="clearFloat"></div>
+#</div>
