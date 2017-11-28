@@ -8,30 +8,16 @@ from lista_deputados import deputados
 #CONSTANTS
 url_inicial = 'http://www.al.ba.gov.br/transparencia/prestacao-de-contas'
 
-'''
-> escolher deputado ou raspar todo o conteudo
-
-> abrir pagina
-    http://www.al.ba.gov.br/transparencia/prestacao-de-contasscip
-
-> selecionar deputado ( Itera todas as 60 opçoes )
-    > selecionar ano
-        >selecionar mes
-        
-> raspar categoria e valor
-
-> salvar em arquivo csv/sql
-'''
-
 print('a')
 
 br = mechanize.Browser()
 try:
     pagina = br.open(url_inicial, timeout=60).read()
-except(urllib2.URLError):
-    print(urllib2.URLError)
+except(urllib2.URLError) as e:
+    print('erro de conexao 1')
+    print(e)
     sys.exit(0)
-    print('d')
+    
 
 for form in br.forms():
     if form.attrs.get('action') == 'prestacao-de-contas':
@@ -47,8 +33,9 @@ def abre_pagina(args):
     try:
         print('c')
         pagina = br.open(url_inicial, timeout=60).read()
-    except(urllib2.URLError):
-        print(urllib2.URLError)
+    except(urllib2.URLError) as e:
+        print('erro de conexao 2')
+        print(e)
         sys.exit(0)
     
     for form in br.forms():
@@ -60,16 +47,19 @@ def abre_pagina(args):
     #parametros_pesquisa = {'deputado': 'todos', 'ano': 'todos', 'mes': 'todos'}
     
     if args.deputado != 'todos':
-        #form['deputado'] = [str(args.deputado)]
         deputy = str(args.deputado)
+    else:
+        deputy = str(0)
         
     if args.ano != 'todos':
-        #form['ano'] = [str(args.ano)]
         year = str(args.ano)
+    else:
+        year = str(0)
     
     if args.mes != 'todos':
-        #form['mes'] = [str(args.mes)]
         month = str(args.mes)
+    else:
+        month = str(0)
         
     #enviar = br.submit()
     print('f')
@@ -122,13 +112,22 @@ def acessa_form(deputy, year, month, form, br):
 
     enviar = br.submit()
     print('legal')
-    soup_dados = BeautifulSoup(br.response().read(), "html5lib")    
-    
+    soup_dados = BeautifulSoup(br.response().read(), "html5lib")       
     dados = soup_dados.find_all('div', 'linha-prop')
+    if len(dados) != 0:
+        arquivo = open("dados_alba.csv", "a+")
+            
     i = 0
     for item in dados:
         if i != 0:
-            print('item')
+            infos_item = item.find_all('div')
+            for infos in infos_item:
+                print infos.text
+                
+            print("""======""")
+            #print(item)
+            
+            #   print("item")
         i+=1
               
     
