@@ -8,7 +8,7 @@ from lista_deputados import deputados
 #CONSTANTS
 url_inicial = 'http://www.al.ba.gov.br/transparencia/prestacao-de-contas'
 
-print('a')
+#print('a')
 
 br = mechanize.Browser()
 try:
@@ -26,12 +26,12 @@ for form in br.forms():
     #print(form)
         
 def abre_pagina(args):
-    print('b')
+    #print('b')
     #print(args)
     
     br = mechanize.Browser()
     try:
-        print('c')
+        #print('c')
         pagina = br.open(url_inicial, timeout=60).read()
     except(urllib2.URLError) as e:
         print('erro de conexao 2')
@@ -42,7 +42,7 @@ def abre_pagina(args):
         if form.attrs.get('action') == 'prestacao-de-contas':
             br.form = form
     
-    print('e')
+    #print('e')
     
     #parametros_pesquisa = {'deputado': 'todos', 'ano': 'todos', 'mes': 'todos'}
     
@@ -62,7 +62,7 @@ def abre_pagina(args):
         month = str(0)
         
     #enviar = br.submit()
-    print('f')
+    #print('f')
     
     #aqui entrar o loop para acessar os dados especificamente
     
@@ -76,10 +76,10 @@ def abre_pagina(args):
     
     acessa_form(deputy, year, month, form, br)
         
-    print('g')
+    #print('g')
     
     pagina_resposta = br.response().read()
-    print('h')
+    #print('h')
     
 def main(args):
     br, cj = common.initialize_browser()
@@ -111,8 +111,16 @@ def acessa_form(deputy, year, month, form, br):
     form['ano'] = [str(year)]
 
     enviar = br.submit()
-    print('legal')
-    soup_dados = BeautifulSoup(br.response().read(), "html5lib")       
+    #print('legal')
+    resposta = br.response().read()
+    #print('h')
+    soup_dados = BeautifulSoup(resposta, "html5lib") 
+    
+    [strong.extract() for strong in soup_dados('strong')]
+    
+    [clearFloat.decompose() for clearFloat in soup_dados.find_all("div", {'class': 'clearFloat'})]
+         
+    
     dados = soup_dados.find_all('div', 'linha-prop')
     if len(dados) != 0:
         arquivo = open("dados_alba.csv", "a+")
@@ -120,49 +128,29 @@ def acessa_form(deputy, year, month, form, br):
     i = 0
     for item in dados:
         if i != 0:
+#            print(item)
+#            print(deputados[str(deputy)])
+            arquivo.write(deputados[str(deputy)] +', ')
             infos_item = item.find_all('div')
+            j = 1
             for infos in infos_item:
-                print infos.text
-                
-            print("""======""")
-            #print(item)
-            
-            #   print("item")
+                a = infos.text.lstrip()
+                palavras = a.split()                
+                if j == 1:
+                    arquivo.write(palavras[0]+', ')
+                    arquivo.write(palavras[2]+', ')
+#                    print(palavras[0])
+#                    print(palavras[2])
+                elif j == 2:
+                    arquivo.write(a.strip().encode("utf-8") +', ')
+#                    print(a.strip())
+                elif j == 3:
+                    a = a[3:]
+                    arquivo.write(a.strip().encode("utf-8"))
+#                    print(a.strip())
+                j = j + 1
         i+=1
+        arquivo.write('\n')
               
-    
+    arquivo.close() 
 abre_pagina(args)
-
-
-#
-#
-#<div class="linha-prop">
-#  <div class="col-prop1">
-#      <strong>Mês / Ano</strong>
-#       01 / 2015
-#  </div>
-#  <div class="col-prop2">
-#      <strong>Categoria</strong>
-#      Aquisição ou locação de software; serviços postais  e de segurança; assinaturas de publicações; TV a cabo ou similar; acesso à Internet; e locação de móveis e equipamentos. Telefones.
-#  </div>
-#  <div class="col-prop3">
-#     <strong>Valor (R$)</strong>
-#     R$ 486.08
-#  </div>
-#  <div class="clearFloat"></div>
-#</div>
-#<div class="linha-prop">
-#  <div class="col-prop1">
-#      <strong>Mês / Ano</strong>
-#       01 / 2015
-#  </div>
-#  <div class="col-prop2">
-#      <strong>Categoria</strong>
-#      Consultorias, assessorias, pesquisas  e trabalhos técnicos
-#  </div>
-#  <div class="col-prop3">
-#     <strong>Valor (R$)</strong>
-#     R$ 32500
-#  </div>
-#  <div class="clearFloat"></div>
-#</div>
