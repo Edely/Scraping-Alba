@@ -27,18 +27,16 @@ for file in onlyfiles:
             print('Nao foi possivel trocar ; por , .')
             
         try:            
-            palavra = ''.join(content).replace('-', ';')
+            palavra2 = ''.join(palavra).replace('-', ';')
         except Exception as e:
             print(e)
             print('Nao foi possivel trocar - por ; .')
         
         
-        novo_arquivo.write(palavra)
+        novo_arquivo.write(palavra2)
         
         novo_arquivo.close()
         #print(novo_nome)
         #print(palavra)
         arquivo.close()
-
-    
     

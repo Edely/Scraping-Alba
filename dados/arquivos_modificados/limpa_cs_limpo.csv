@@ -21,24 +21,22 @@ for file in onlyfiles:
     with open(file) as arquivo:
         content = arquivo.readlines()
         try:
-            palavra = ''.join(content).replace(';', ',')
+            palavra = ''.join(content).replace(',', ',')
+        except Exception as e:
+            print(e)
+            print('Nao foi possivel trocar , por , .')
+            
+        try:            
+            palavra2 = ''.join(palavra).replace(';', ',')
         except Exception as e:
             print(e)
             print('Nao foi possivel trocar ; por , .')
-            
-        try:            
-            palavra = ''.join(content).replace(';', ';')
-        except Exception as e:
-            print(e)
-            print('Nao foi possivel trocar ; por ; .')
         
         
-        novo_arquivo.write(palavra)
+        novo_arquivo.write(palavra2)
         
         novo_arquivo.close()
         #print(novo_nome)
         #print(palavra)
         arquivo.close()
-
-    
     
