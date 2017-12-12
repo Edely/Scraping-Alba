@@ -405,7 +405,7 @@
 901255;Dep. Paulo Câmera;11; 2017; Consultorias; 8000
 901255;Dep. Paulo Câmera;12; 2017; Consultorias; 9000
 901255;Dep. Paulo Câmera;12; 2017; Divulgação da  atividade parlamentar; 12900
-901255;Dep. Paulo Câmera;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 9000
+901255;Dep. Paulo Câmera;12; 2017; Trabalhos Técnicos; 9000
 903706;Dep. Nelson Leal;07; 2007; Divulgação da  atividade parlamentar; 30000
 903706;Dep. Nelson Leal;09; 2007; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
 903706;Dep. Nelson Leal;10; 2007; Divulgação da  atividade parlamentar; 15000
@@ -558,9 +558,10 @@
 903706;Dep. Nelson Leal;09; 2017; Divulgação da  atividade parlamentar; 11500
 903706;Dep. Nelson Leal;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 33500
 903706;Dep. Nelson Leal;10; 2017; Divulgação da  atividade parlamentar; 9750
-903706;Dep. Nelson Leal;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 9750
+903706;Dep. Nelson Leal;11; 2017; Consultorias; 9750
 903706;Dep. Nelson Leal;11; 2017; Divulgação da  atividade parlamentar; 22500
-903706;Dep. Nelson Leal;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 19500
+903706;Dep. Nelson Leal;12; 2017; Assessorias; 9750
+903706;Dep. Nelson Leal;12; 2017; Consultorias; 9750
 903706;Dep. Nelson Leal;12; 2017; Divulgação da  atividade parlamentar; 23100
 903708;Dep. Aderbal Caldas;07; 2007; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 11470.85
 903708;Dep. Aderbal Caldas;08; 2007; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 11153.59
@@ -900,7 +901,7 @@
 903708;Dep. Aderbal Caldas;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 18000
 903708;Dep. Aderbal Caldas;10; 2017; Divulgação da  atividade parlamentar; 36100
 903708;Dep. Aderbal Caldas;11; 2017; Divulgação da  atividade parlamentar; 25500
-903708;Dep. Aderbal Caldas;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 9500
+903708;Dep. Aderbal Caldas;12; 2017; Assessorias; 9500
 903708;Dep. Aderbal Caldas;12; 2017; Divulgação da  atividade parlamentar; 33000
 907264;Dep. Sandro Régis;07; 2007; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
 907264;Dep. Sandro Régis;08; 2007; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
@@ -1094,9 +1095,10 @@
 907264;Dep. Sandro Régis;09; 2017; Divulgação da  atividade parlamentar; 24190
 907264;Dep. Sandro Régis;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 12000
 907264;Dep. Sandro Régis;10; 2017; Divulgação da  atividade parlamentar; 24190
-907264;Dep. Sandro Régis;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 12950
+907264;Dep. Sandro Régis;11; 2017; Assessorias; 9750
 907264;Dep. Sandro Régis;11; 2017; Divulgação da  atividade parlamentar; 21990
-907264;Dep. Sandro Régis;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 9750
+907264;Dep. Sandro Régis;11; 2017; Trabalhos Técnicos; 3200
+907264;Dep. Sandro Régis;12; 2017; Assessorias; 9750
 907264;Dep. Sandro Régis;12; 2017; Divulgação da  atividade parlamentar; 29695
 907274;Dep. Zé Neto;07; 2007; Aluguel  de imóveis para escritório, despesas concernentes a eles; 4332.719999999999
 907274;Dep. Zé Neto;07; 2007; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 1878
@@ -2493,9 +2495,10 @@
 907281;Dep. Angelo Coronel;10; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 15100
 907281;Dep. Angelo Coronel;10; 2017; Consultorias; 2000
 907281;Dep. Angelo Coronel;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 31900
-907281;Dep. Angelo Coronel;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 2000
+907281;Dep. Angelo Coronel;11; 2017; Assessorias; 2000
 907281;Dep. Angelo Coronel;11; 2017; Divulgação da  atividade parlamentar; 27000
-907281;Dep. Angelo Coronel;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 12000
+907281;Dep. Angelo Coronel;12; 2017; Assessorias; 6000
+907281;Dep. Angelo Coronel;12; 2017; Consultorias; 6000
 907281;Dep. Angelo Coronel;12; 2017; Divulgação da  atividade parlamentar; 27000
 907284;Dep. Rogério Andrade;07; 2007; Aluguel  de imóveis para escritório, despesas concernentes a eles; 13000
 907284;Dep. Rogério Andrade;08; 2007; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 13000
@@ -3626,8 +3629,11 @@
 910630;Dep. Ângela Sousa;08; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 35000
 910630;Dep. Ângela Sousa;09; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 35000
 910630;Dep. Ângela Sousa;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 50000
-910630;Dep. Ângela Sousa;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 29152.7
-910630;Dep. Ângela Sousa;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 19400
+910630;Dep. Ângela Sousa;11; 2017; Assessorias; 9700
+910630;Dep. Ângela Sousa;11; 2017; Consultorias; 9700
+910630;Dep. Ângela Sousa;11; 2017; Trabalhos Técnicos; 9752.709999999999
+910630;Dep. Ângela Sousa;12; 2017; Assessorias; 9700
+910630;Dep. Ângela Sousa;12; 2017; Consultorias; 9700
 910630;Dep. Ângela Sousa;12; 2017; Divulgação da  atividade parlamentar; 15000
 910631;Dep. Bira Coroa;07; 2007; Aluguel  de imóveis para escritório, despesas concernentes a eles; 11050
 910631;Dep. Bira Coroa;07; 2007; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 3500
@@ -4285,8 +4291,10 @@
 910635;Dep. Euclides Fernandes;11; 2017; Divulgação da  atividade parlamentar; 25800
 910635;Dep. Euclides Fernandes;11; 2017; Locomoção, hospedagem; 2050
 910635;Dep. Euclides Fernandes;12; 2017; Aluguel  de imóveis para escritório, despesas concernentes a eles; 1540
-910635;Dep. Euclides Fernandes;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 25300
+910635;Dep. Euclides Fernandes;12; 2017; Assessorias; 9750
+910635;Dep. Euclides Fernandes;12; 2017; Consultorias; 5800
 910635;Dep. Euclides Fernandes;12; 2017; Locomoção de veículo terrestre; 1800
+910635;Dep. Euclides Fernandes;12; 2017; Pesquisas; 9750
 910636;Dep. Fátima Nunes;07; 2007; Aluguel  de imóveis para escritório, despesas concernentes a eles; 4372.55
 910636;Dep. Fátima Nunes;07; 2007; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 4265.31
 910636;Dep. Fátima Nunes;07; 2007; Divulgação da  atividade parlamentar; 369.5
@@ -6088,10 +6096,11 @@
 915861;Dep. Augusto Castro;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 7000
 915861;Dep. Augusto Castro;10; 2017; Divulgação da  atividade parlamentar; 5600
 915861;Dep. Augusto Castro;10; 2017; Locomoção, hospedagem; 10800
-915861;Dep. Augusto Castro;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 17500
+915861;Dep. Augusto Castro;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
 915861;Dep. Augusto Castro;11; 2017; Divulgação da  atividade parlamentar; 9100
 915861;Dep. Augusto Castro;11; 2017; Locomoção de veículo terrestre; 10800
-915861;Dep. Augusto Castro;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 9500
+915861;Dep. Augusto Castro;11; 2017; Pesquisas; 2500
+915861;Dep. Augusto Castro;12; 2017; Consultorias; 9500
 915861;Dep. Augusto Castro;12; 2017; Divulgação da  atividade parlamentar; 19600
 915862;Dep. Bruno Reis;02; 2011; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
 915862;Dep. Bruno Reis;03; 2011; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 27600
@@ -6423,7 +6432,7 @@
 915864;Dep. Carlos Geilson;11; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 687.9400000000001
 915864;Dep. Carlos Geilson;11; 2017; Divulgação da  atividade parlamentar; 11000
 915864;Dep. Carlos Geilson;11; 2017; Locomoção de veículo terrestre; 7200
-915864;Dep. Carlos Geilson;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 5900
+915864;Dep. Carlos Geilson;11; 2017; Trabalhos Técnicos; 5900
 915864;Dep. Carlos Geilson;12; 2017; Aluguel  de imóveis para escritório, despesas concernentes a eles; 3000
 915864;Dep. Carlos Geilson;12; 2017; Divulgação da  atividade parlamentar; 48150
 915864;Dep. Carlos Geilson;12; 2017; Locomoção de veículo terrestre; 2400
@@ -7704,11 +7713,15 @@
 915871;Dep. Tom Araújo;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 21500
 915871;Dep. Tom Araújo;10; 2017; Divulgação da  atividade parlamentar; 27800
 915871;Dep. Tom Araújo;11; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 723.88
-915871;Dep. Tom Araújo;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 24700
+915871;Dep. Tom Araújo;11; 2017; Assessorias; 9700
+915871;Dep. Tom Araújo;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 9500
 915871;Dep. Tom Araújo;11; 2017; Divulgação da  atividade parlamentar; 22800
+915871;Dep. Tom Araújo;11; 2017; Trabalhos Técnicos; 5500
 915871;Dep. Tom Araújo;12; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 600
-915871;Dep. Tom Araújo;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 24700
+915871;Dep. Tom Araújo;12; 2017; Consultorias; 9700
 915871;Dep. Tom Araújo;12; 2017; Divulgação da  atividade parlamentar; 31900
+915871;Dep. Tom Araújo;12; 2017; Pesquisas; 9500
+915871;Dep. Tom Araújo;12; 2017; Trabalhos Técnicos; 5500
 915876;Dep. Pedro Tavares;02; 2011; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 14000
 915876;Dep. Pedro Tavares;02; 2011; Divulgação da  atividade parlamentar; 5000
 915876;Dep. Pedro Tavares;03; 2011; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 19000
@@ -7878,9 +7891,10 @@
 915876;Dep. Pedro Tavares;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 4000
 915876;Dep. Pedro Tavares;10; 2017; Divulgação da  atividade parlamentar; 11800
 915876;Dep. Pedro Tavares;10; 2017; Locomoção, hospedagem; 19000
-915876;Dep. Pedro Tavares;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 14000
+915876;Dep. Pedro Tavares;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 10000
 915876;Dep. Pedro Tavares;11; 2017; Divulgação da  atividade parlamentar; 8000
 915876;Dep. Pedro Tavares;11; 2017; Locomoção de veículo terrestre; 9500
+915876;Dep. Pedro Tavares;11; 2017; Trabalhos Técnicos; 4000
 915876;Dep. Pedro Tavares;12; 2017; Divulgação da  atividade parlamentar; 1000
 915877;Dep. Marcelino Galo;03; 2011; Aluguel  de imóveis para escritório, despesas concernentes a eles; 1500
 915877;Dep. Marcelino Galo;03; 2011; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 5400
@@ -9071,8 +9085,9 @@
 915881;Dep. Rosemberg Pinto;10; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 720
 915881;Dep. Rosemberg Pinto;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 22000
 915881;Dep. Rosemberg Pinto;11; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 720
-915881;Dep. Rosemberg Pinto;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 18700
+915881;Dep. Rosemberg Pinto;11; 2017; Assessorias; 9500
 915881;Dep. Rosemberg Pinto;11; 2017; Divulgação da  atividade parlamentar; 21500
+915881;Dep. Rosemberg Pinto;11; 2017; Trabalhos Técnicos; 9200
 915881;Dep. Rosemberg Pinto;12; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 720
 915881;Dep. Rosemberg Pinto;12; 2017; Assessorias; 9500
 915881;Dep. Rosemberg Pinto;12; 2017; Consultorias; 9500
@@ -9318,13 +9333,18 @@
 915883;Dep. Targino Machado;10; 2017; Locomoção, hospedagem; 10400
 915883;Dep. Targino Machado;11; 2017; Aluguel  de imóveis para escritório, despesas concernentes a eles; 2310.23
 915883;Dep. Targino Machado;11; 2017; Aquisição de material de expediente; 573.74
-915881;Dep. Rosemberg Pinto;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 27500
+915883;Dep. Targino Machado;11; 2017; Assessorias; 9700
+915883;Dep. Targino Machado;11; 2017; Consultorias; 5000
 915883;Dep. Targino Machado;11; 2017; Divulgação da  atividade parlamentar; 24267
 915883;Dep. Targino Machado;11; 2017; Divulgação da atividade parlamentar em redes sociais; 900
+915883;Dep. Targino Machado;11; 2017; Pesquisas; 9000
+915883;Dep. Targino Machado;11; 2017; Trabalhos Técnicos; 3800
 915883;Dep. Targino Machado;12; 2017; Aluguel  de imóveis para escritório, despesas concernentes a eles; 2182.93
-915883;Dep. Targino Machado;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 17700
+915883;Dep. Targino Machado;12; 2017; Assessorias; 9700
+915883;Dep. Targino Machado;12; 2017; Consultorias; 5000
 915883;Dep. Targino Machado;12; 2017; Divulgação da  atividade parlamentar; 27067
 915883;Dep. Targino Machado;12; 2017; Locomoção de veículo terrestre; 10000
+915883;Dep. Targino Machado;12; 2017; Pesquisas; 3000
 915884;Dep. Pastor Sargento Isidório;02; 2011; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 6000
 915884;Dep. Pastor Sargento Isidório;03; 2011; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 6000
 915884;Dep. Pastor Sargento Isidório;04; 2011; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 6000
@@ -9823,10 +9843,12 @@
 915887;Dep. Alan Sanches;08; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 46500
 915887;Dep. Alan Sanches;09; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 9500
 915887;Dep. Alan Sanches;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 9500
-915887;Dep. Alan Sanches;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 14700
+915887;Dep. Alan Sanches;11; 2017; Consultorias; 5000
 915887;Dep. Alan Sanches;11; 2017; Divulgação da  atividade parlamentar; 114905
-915887;Dep. Alan Sanches;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 14700
+915887;Dep. Alan Sanches;11; 2017; Pesquisas; 9700
+915887;Dep. Alan Sanches;12; 2017; Consultorias; 5000
 915887;Dep. Alan Sanches;12; 2017; Divulgação da  atividade parlamentar; 10675
+915887;Dep. Alan Sanches;12; 2017; Pesquisas; 9700
 919328;Dep. Jurandy Oliveira;07; 2007; Divulgação da  atividade parlamentar; 7000
 919328;Dep. Jurandy Oliveira;07; 2007; Locomoção, hospedagem; 8000
 919328;Dep. Jurandy Oliveira;08; 2007; Divulgação da  atividade parlamentar; 7020
@@ -10034,11 +10056,14 @@
 919328;Dep. Jurandy Oliveira;10; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 600
 919328;Dep. Jurandy Oliveira;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 20000
 919328;Dep. Jurandy Oliveira;11; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 600
-919328;Dep. Jurandy Oliveira;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 29100
+919328;Dep. Jurandy Oliveira;11; 2017; Assessorias; 9700
+919328;Dep. Jurandy Oliveira;11; 2017; Consultorias; 9700
 919328;Dep. Jurandy Oliveira;11; 2017; Divulgação da  atividade parlamentar; 1200
+919328;Dep. Jurandy Oliveira;11; 2017; Trabalhos Técnicos; 9700
 919328;Dep. Jurandy Oliveira;12; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 600
-919328;Dep. Jurandy Oliveira;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 17700
+919328;Dep. Jurandy Oliveira;12; 2017; Assessorias; 9700
 919328;Dep. Jurandy Oliveira;12; 2017; Divulgação da  atividade parlamentar; 71200
+919328;Dep. Jurandy Oliveira;12; 2017; Trabalhos Técnicos; 8000
 919329;Dep. Marquinho Viana;01; 2013; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
 919329;Dep. Marquinho Viana;01; 2013; Locomoção, hospedagem; 5500
 919329;Dep. Marquinho Viana;02; 2013; Aluguel  de imóveis para escritório, despesas concernentes a eles; 1200
@@ -10747,10 +10772,14 @@
 921265;Dep. Robinho;08; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 36000
 921265;Dep. Robinho;09; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 36000
 921265;Dep. Robinho;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 36000
-921265;Dep. Robinho;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 29100
+921265;Dep. Robinho;11; 2017; Assessorias; 9700
 921265;Dep. Robinho;11; 2017; Locomoção, hospedagem; 7100
-921265;Dep. Robinho;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 29100
+921265;Dep. Robinho;11; 2017; Pesquisas; 9700
+921265;Dep. Robinho;11; 2017; Trabalhos Técnicos; 9700
+921265;Dep. Robinho;12; 2017; Assessorias; 9700
+921265;Dep. Robinho;12; 2017; Consultorias; 9700
 921265;Dep. Robinho;12; 2017; Locomoção de veículo terrestre; 7100
+921265;Dep. Robinho;12; 2017; Trabalhos Técnicos; 9700
 921266;Dep. Zó;03; 2015; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 46000
 921266;Dep. Zó;03; 2015; Locomoção, hospedagem; 176.6
 921266;Dep. Zó;04; 2015; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
@@ -10903,12 +10932,16 @@
 921267;Dep. David Rios;10; 2017; Divulgação da  atividade parlamentar; 9600
 921267;Dep. David Rios;11; 2017; Aluguel  de imóveis para escritório, despesas concernentes a eles; 2000
 921267;Dep. David Rios;11; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 178.53
-921267;Dep. David Rios;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 23900
+921267;Dep. David Rios;11; 2017; Assessorias; 6000
+921267;Dep. David Rios;11; 2017; Consultorias; 9500
 921267;Dep. David Rios;11; 2017; Divulgação da  atividade parlamentar; 9600
 921267;Dep. David Rios;11; 2017; Locomoção de veículo terrestre; 8467.299999999999
+921267;Dep. David Rios;11; 2017; Pesquisas; 8400
 921267;Dep. David Rios;12; 2017; Aluguel  de imóveis para escritório, despesas concernentes a eles; 2000
-921267;Dep. David Rios;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 23900
+921267;Dep. David Rios;12; 2017; Assessorias; 6000
+921267;Dep. David Rios;12; 2017; Consultorias; 9500
 921267;Dep. David Rios;12; 2017; Divulgação da  atividade parlamentar; 19200
+921267;Dep. David Rios;12; 2017; Pesquisas; 8400
 921268;Dep. Eduardo Salles;02; 2015; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 12000
 921268;Dep. Eduardo Salles;03; 2015; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 376.69
 921268;Dep. Eduardo Salles;04; 2015; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 1298.82
@@ -11509,12 +11542,16 @@
 921272;Dep. Hildécio Meireles;10; 2017; Divulgação da  atividade parlamentar; 29650
 921272;Dep. Hildécio Meireles;11; 2017; Aluguel  de imóveis para escritório, despesas concernentes a eles; 1706.53
 921272;Dep. Hildécio Meireles;11; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 830.95
-921272;Dep. Hildécio Meireles;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
+921272;Dep. Hildécio Meireles;11; 2017; Assessorias; 6000
+921272;Dep. Hildécio Meireles;11; 2017; Consultorias; 6000
 921272;Dep. Hildécio Meireles;11; 2017; Divulgação da  atividade parlamentar; 12650
+921272;Dep. Hildécio Meireles;11; 2017; Trabalhos Técnicos; 3000
 921272;Dep. Hildécio Meireles;12; 2017; Aluguel  de imóveis para escritório, despesas concernentes a eles; 1915.33
 921272;Dep. Hildécio Meireles;12; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 60
-921272;Dep. Hildécio Meireles;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 22400
+921272;Dep. Hildécio Meireles;12; 2017; Assessorias; 9700
+921272;Dep. Hildécio Meireles;12; 2017; Consultorias; 9700
 921272;Dep. Hildécio Meireles;12; 2017; Divulgação da  atividade parlamentar; 12650
+921272;Dep. Hildécio Meireles;12; 2017; Trabalhos Técnicos; 3000
 921273;Dep. Janio Natal;02; 2015; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
 921273;Dep. Janio Natal;03; 2015; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
 921273;Dep. Janio Natal;04; 2015; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 15000
@@ -11823,10 +11860,14 @@
 921278;Dep. Luciano Simões Filho;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 36000
 921278;Dep. Luciano Simões Filho;10; 2017; Divulgação da  atividade parlamentar; 2500
 921278;Dep. Luciano Simões Filho;11; 2017; Aquisição ou locação de software, serviços postais  e de segurança, assinaturas de publicações, TV a cabo ou similar, acesso à Internet, e locação de móveis e equipamentos. Telefones.; 798.97
-921278;Dep. Luciano Simões Filho;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 28000
+921278;Dep. Luciano Simões Filho;11; 2017; Assessorias; 9000
+921278;Dep. Luciano Simões Filho;11; 2017; Consultorias; 9500
 921278;Dep. Luciano Simões Filho;11; 2017; Divulgação da  atividade parlamentar; 2500
-921278;Dep. Luciano Simões Filho;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 28000
+921278;Dep. Luciano Simões Filho;11; 2017; Pesquisas; 9500
+921278;Dep. Luciano Simões Filho;12; 2017; Assessorias; 9000
+921278;Dep. Luciano Simões Filho;12; 2017; Consultorias; 9500
 921278;Dep. Luciano Simões Filho;12; 2017; Divulgação da  atividade parlamentar; 15200
+921278;Dep. Luciano Simões Filho;12; 2017; Pesquisas; 9500
 921279;Dep. Marcell Moraes;02; 2015; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 31000
 921279;Dep. Marcell Moraes;03; 2015; Divulgação da  atividade parlamentar; 40000
 921279;Dep. Marcell Moraes;04; 2015; Divulgação da  atividade parlamentar; 38500
@@ -11879,9 +11920,10 @@
 921279;Dep. Marcell Moraes;09; 2017; Divulgação da  atividade parlamentar; 28800
 921279;Dep. Marcell Moraes;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 13800
 921279;Dep. Marcell Moraes;10; 2017; Divulgação da  atividade parlamentar; 24600
-921279;Dep. Marcell Moraes;11; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 13000
+921279;Dep. Marcell Moraes;11; 2017; Assessorias; 9000
 921279;Dep. Marcell Moraes;11; 2017; Divulgação da  atividade parlamentar; 15300
 921279;Dep. Marcell Moraes;11; 2017; Divulgação da atividade parlamentar em redes sociais; 3800
+921279;Dep. Marcell Moraes;11; 2017; Pesquisas; 4000
 921280;Dep. Soldado Prisco;02; 2015; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 35540.51
 921280;Dep. Soldado Prisco;03; 2015; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 35540.50999999999
 921280;Dep. Soldado Prisco;04; 2015; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 10000
@@ -11938,8 +11980,9 @@
 921280;Dep. Soldado Prisco;08; 2017; Divulgação da  atividade parlamentar; 8000
 921280;Dep. Soldado Prisco;09; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 8000
 921280;Dep. Soldado Prisco;09; 2017; Divulgação da  atividade parlamentar; 29500
-921280;Dep. Soldado Prisco;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 38000
+921280;Dep. Soldado Prisco;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 20000
 921280;Dep. Soldado Prisco;10; 2017; Divulgação da  atividade parlamentar; 12000
+921280;Dep. Soldado Prisco;10; 2017; Trabalhos Técnicos; 18000
 921280;Dep. Soldado Prisco;11; 2017; Assessorias; 8000
 921280;Dep. Soldado Prisco;11; 2017; Divulgação da  atividade parlamentar; 18000
 921280;Dep. Soldado Prisco;12; 2017; Consultorias; 9000
@@ -12208,10 +12251,12 @@
 923798;Dep. Mirela Macedo;09; 2017; Divulgação da  atividade parlamentar; 5000
 923798;Dep. Mirela Macedo;10; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 22000
 923798;Dep. Mirela Macedo;10; 2017; Divulgação da  atividade parlamentar; 27600
-923798;Dep. Mirela Macedo;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 19500
+923798;Dep. Mirela Macedo;11; 2017; Assessorias; 9750
 923798;Dep. Mirela Macedo;11; 2017; Divulgação da  atividade parlamentar; 19000
-923798;Dep. Mirela Macedo;12; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 19500
+923798;Dep. Mirela Macedo;11; 2017; Trabalhos Técnicos; 9750
+923798;Dep. Mirela Macedo;12; 2017; Assessorias; 9750
 923798;Dep. Mirela Macedo;12; 2017; Divulgação da  atividade parlamentar; 19580
+923798;Dep. Mirela Macedo;12; 2017; Trabalhos Técnicos; 9750
 923801;Dep. Samuel Júnior;02; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 4320
 923801;Dep. Samuel Júnior;03; 2017; Consultorias, assessorias, pesquisas  e trabalhos técnicos; 24000
 923801;Dep. Samuel Júnior;03; 2017; Divulgação da  atividade parlamentar; 18000
