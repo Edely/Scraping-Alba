@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser()
 - ao rodar o script com os seguintes argumentos, fazer busca de acordo com os dados passados
     --deputado --ano --mes --categoria
 '''
-SELETOR = "table.tabela-cab .table-itens"
+SELETOR = "table.tabela-cab tr.table-itens td"
 
 #http://www.al.ba.gov.br/transparencia/prestacao-contas?categoria=&deputado=903708&mes=3&ano=2018&page=0&size=20
 # http://www.al.ba.gov.br/transparencia/prestacao-contas?ano=&categoria=&page=0&size=200
@@ -48,33 +48,37 @@ def create_soup(source):
     return soup
 
 def find_table(soup, seletor):
-    table_rows = soup.find_all(seletor)
+    table_rows = soup.select(seletor)
     if len(table_rows):
         return table_rows
     else:
         print('Nenhum dado encontrado')
         return False
 
-def iterate_table(soup, table_rows):
-    for row in table_rows:       
-        tds = row.find_children('td')        
-        processo =  str(tds[0])
-        nf =        str(tds[1])
-        date =      str(tds[2])
+def iterate_table(soup, table_cels):
+    i = 0
+    len_tab = len(table_cels)
+    print('len_tab')
+    print(str(len_tab) + '\n')
+
+    while i < len_tab:               
+        processo =  table_cels[0 + i].text
+        nf =        table_cels[1 + i].text
+        date =      table_cels[2 + i].text
         #ano =       date.split('\\')
         #mes =       date.split('\\')
-        dep =       str(tds[3])
-        cat =       tds[4].text
-        valor =     tds[5].text
-        #print(cat)
-        #print(valor)
-        print(row)
-        #print(cat)
-        #print(valor)
-        #    print('================')
-        #    print('======AQUI======')
-        #    print('================')
-        #    print(td)
+        dep =       table_cels[3 + i].text
+        cat =       table_cels[4 + i].text
+        valor =     table_cels[5 + i].text
+        print(processo.strip())
+        print(nf.strip('0'))
+        print(date)
+        print(dep)
+        print(cat)
+        print(valor)
+        print('\n')
+        i += 6
+        
         
 
 if __name__ == "__main__":
