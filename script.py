@@ -57,18 +57,30 @@ def find_table(soup, seletor):
         return False
 
 def iterate_table(soup, table_rows):
+    i = 0
     for row in table_rows:       
-        tds = soup.find_all('td')
+        tds = soup.select('.table-itens td')
         #for td in tds:
-        date = ''
-        mes = ''
-        ano = ''
-        data = ''
+        #print(tds)
+        '''
+        processo =  str(tds[0])
+        nf =        str(tds[1])
+        date =      str(tds[2])
+        #ano =       date.split('\\')
+        #mes =       date.split('\\')
+        dep =       str(tds[3])
+        cat =       tds[4].text
+        valor =     tds[5].text
+        '''
+        print(i)
+        print(tds)
+        i = i + 1 
+        #print(cat)
+        #print(valor)
         #    print('================')
         #    print('======AQUI======')
         #    print('================')
         #    print(td)
-        break  
         
 
 if __name__ == "__main__":
@@ -82,4 +94,6 @@ if __name__ == "__main__":
     first_source = access_page(url)
     initial_soup = create_soup(first_source)
     table = find_table(initial_soup, SELETOR)
-    iterate_table(initial_soup, table)
+
+    if(table):
+        iterate_table(initial_soup, table)
