@@ -39,7 +39,6 @@ def base_url(args):
     return base_url
       
 def access_page(url):
-    print(url)
     page  = requests.get(url)
     source = page.content
     return source
@@ -49,7 +48,7 @@ def create_soup(source):
     return soup
 
 def find_table(soup, seletor):
-    table_rows = soup.select(seletor)
+    table_rows = soup.find_all(seletor)
     if len(table_rows):
         return table_rows
     else:
@@ -57,12 +56,8 @@ def find_table(soup, seletor):
         return False
 
 def iterate_table(soup, table_rows):
-    i = 0
     for row in table_rows:       
-        tds = soup.select('.table-itens td')
-        #for td in tds:
-        #print(tds)
-        '''
+        tds = row.find_children('td')        
         processo =  str(tds[0])
         nf =        str(tds[1])
         date =      str(tds[2])
@@ -71,10 +66,9 @@ def iterate_table(soup, table_rows):
         dep =       str(tds[3])
         cat =       tds[4].text
         valor =     tds[5].text
-        '''
-        print(i)
-        print(tds)
-        i = i + 1 
+        #print(cat)
+        #print(valor)
+        print(row)
         #print(cat)
         #print(valor)
         #    print('================')
